@@ -25,10 +25,10 @@ interface for Ionic Capacitor.
 ### getMaxMemory()
 
 ```typescript
-getMaxMemory() => any
+getMaxMemory() => Promise<{ value: number; }>
 ```
 
-**Returns:** <code>any</code>
+**Returns:** <code>Promise&lt;{ value: number; }&gt;</code>
 
 --------------------
 
@@ -36,10 +36,8 @@ getMaxMemory() => any
 ### start()
 
 ```typescript
-start() => any
+start() => Promise<void>
 ```
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -47,14 +45,12 @@ start() => any
 ### cmd(...)
 
 ```typescript
-cmd(options: { cmd: string; }) => any
+cmd(options: { cmd: string; }) => Promise<void>
 ```
 
 | Param         | Type                          |
 | ------------- | ----------------------------- |
 | **`options`** | <code>{ cmd: string; }</code> |
-
-**Returns:** <code>any</code>
 
 --------------------
 
@@ -62,10 +58,8 @@ cmd(options: { cmd: string; }) => any
 ### exit()
 
 ```typescript
-exit() => any
+exit() => Promise<void>
 ```
-
-**Returns:** <code>any</code>
 
 --------------------
 
